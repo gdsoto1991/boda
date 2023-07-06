@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'Amsterdam';
+    src: url('../Amsterdam/AlexBrush-Regular.ttf') format('truetype');
+    font-style: oblique;
+    font-weight: normal;
+  }
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Georgia, serif; 
+}
+body{
+    justify-content: center;
+    width: 1000px;
+}
+
+
+:root{
+    --colorTextPrimary: #f0ead2;
+    --colorTextSecundary: #d8e2dc;
+    --colorTextTertiary:  #adc178;
+    --mainColorPrimary: #a98467;
+    --mainColorSecundary: #6c584c;
+}
+
+img{
+    position: absolute;
+    width: 100%;
+    height: 120%;
+}
+
+.container{
+    width: 1490px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+}
+
+.carta{
+    background-image: url(../Imagenes/invitacion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: 4%;
+    margin-left: 18%;
+    margin-right: 2%;
+    flex-basis: 0;
+    flex-grow: 2;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.726);
+    border-radius: 16px;
+}
+
+h1{
+    padding: 20px;
+}
+
+
+.button{
+    width: 800px;
+    display: flex;
+    flex-direction:row;
+}
+
+.btn-abrir{
+    width: 50%;
+    margin-right: 10px;
+    padding: 15px;
+    border: 2px solid white;
+    background: rgba(157, 156, 158, 0.75);
+    color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: .25s ease background;
+    border-radius: 10px;
+}
+.btn-abrir:hover{
+    color: white;
+    background: var(--mainColorSecundary);
+}
+
+.subs-send{
+    width: 50%;
+    padding: 15px;
+    border: 2px solid white;
+    background: rgba(157, 156, 158, 0.75);
+    color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: .25s ease background;
+    border-radius: 10px;
+}
+
+.subs-send:hover{
+    background: var(--mainColorSecundary);
+    border: 2px solid white;
+    color: white;
+}
+
+.title{
+    font-family: Amsterdam;
+    font-weight: 100;
+    font-style: oblique;
+    font-size: 80px;
+    color: var(--colorTextPrimary);
+}
+
+.subtitle{
+    font-family: Playfair Display;
+    font-weight: 500;
+    font-style: oblique;
+    font-size: 25px;
+    color: var(--colorTextSecundary);
+}
+.names{
+    font-family: Amsterdam;
+    font-weight: 100;
+    font-style: oblique;
+    font-size: 80px;
+    color: var(--colorTextPrimary);
+}
+p{
+    font-family: Playfair Display;
+    font-weight: 500;
+    font-style: oblique;
+    font-size: 25px;
+    color: var(--colorTextSecundary);
+}
+.styled-image {
+    width: 171.875px;
+    height: 27.3438px;
+    transition: opacity 0.5s ease;
+    text-align: inherit;
+    line-height: 0px;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 8px;
+}
+
+.capa{
+   position:absolute;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.267);
+    border-radius: 16px;
+}
+
+.instagram-link {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.instagram-link img {
+  width: 30px;
+  height: 30px;
+}
+
+
+body::-webkit-scrollbar{
+    width: 7px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #a98467;
+    border-radius: 50px;
+}
+/* Transiciones al cargar la página */
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.capa {
+    animation: scale 1s ease;
+}
